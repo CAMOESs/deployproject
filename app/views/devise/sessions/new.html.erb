@@ -30,60 +30,6 @@
 
 
 
-
-
-
-
-
-    <div class="adminlink">
-    <div>
-        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-
-            <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "email",value: "guest@general.com", class: "shadow" %>
-            <%= f.password_field :password, autocomplete: "current-password", placeholder: "mot de passe", value: "123456", class: "shadow" %>
-
-          <div class="actions">
-            <%= f.submit "invité général", id: "login" %>
-          </div>
-        <% end %>
-      </div>
-      <div>
-        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-
-            <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "email",value: "guest@admin.com", class: "shadow" %>
-            <%= f.password_field :password, autocomplete: "current-password", placeholder: "mot de passe", value: "123456", class: "shadow" %>
-
-          <div class="actions">
-            <%= f.submit "invité administrateur", id: "login" %>
-          </div>
-        <% end %>
-      </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <%= link_to "home", "/",class:"_link"%>
 
     <%= render "devise/shared/links" %>
